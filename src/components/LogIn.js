@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import './Home.css';
 
 class LogIn extends Component {
   constructor () {
@@ -34,7 +36,10 @@ class LogIn extends Component {
     }
 
     return (
-      <div>
+      <div className="Container">
+
+      <div><Link to="/">Home</Link></div>
+
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="userName">User Name</label>
