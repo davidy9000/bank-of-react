@@ -4,6 +4,7 @@ import Home from './components/Home';
 import UserProfile from './components/UserProfile';
 import LogIn from './components/LogIn';
 import Debits from './components/Debits';
+import Credits from './components/Credits';
 import './App.css';
 
 
@@ -63,6 +64,7 @@ class App extends Component {
     const LogInComponent = () => (<LogIn user={this.state.currentUser} mockLogIn={this.mockLogIn} {...this.props}/>)
     const DebitsComponent = () => (<Debits accountBalance={this.state.accountBalance} OnNewDebit={this.handleBalance} />);
 
+
     //The display:
     return (
         <Router>
@@ -74,6 +76,7 @@ class App extends Component {
             <Route exact path="/login" render={LogInComponent}/>
             <Route exact path="/userProfile" render={UserProfileComponent}/>
             <Route exact path="/Debits" render={DebitsComponent}/>
+            <Route exact path="/Credits" render={CreditsComponent}/>
           </div>
         </Router>
     );
