@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import './Home.css';
 
 class UserProfile extends Component {
   render() {
     return (
-        <div>
+        <div className="Container">
           <h1>User Profile</h1>
           <Link to="/">Home</Link>
 
