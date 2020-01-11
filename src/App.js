@@ -63,7 +63,7 @@ class App extends Component {
 
     const LogInComponent = () => (<LogIn user={this.state.currentUser} mockLogIn={this.mockLogIn} {...this.props}/>)
     const DebitsComponent = () => (<Debits accountBalance={this.state.accountBalance} OnNewDebit={this.handleBalance} />);
-
+    const CreditsComponent = () => (<Credits accountBalance={this.state.accountBalance} OnNewCredit={this.handleBalance} />);
 
     //The display:
     return (
@@ -76,6 +76,7 @@ class App extends Component {
             <Route exact path="/login" render={LogInComponent}/>
             <Route exact path="/userProfile" render={UserProfileComponent}/>
             <Route exact path="/Debits" render={DebitsComponent}/>
+            <Route exact path="/Credits" render={CreditsComponent}/>
           </div>
         </Router>
     );
