@@ -2,3 +2,14 @@
 	text-align: center;
 	font-family: courier;
 }
+
+.Envelope {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+h1#debit {
+	color: red;
+}
