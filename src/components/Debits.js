@@ -64,7 +64,7 @@ class Debits extends Component {
     }
 
     render() {
-        // console.log(this.state.debits);
+        console.log(this.state.debits);
         return (
             <div className="Envelope">
                 <div className="Container">
